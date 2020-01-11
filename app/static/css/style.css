@@ -1,0 +1,13 @@
+.container {
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+#color-picker-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-group button.btn {
+    width: 33.3%;
+}

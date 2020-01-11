@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LightBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/slate/bootstrap.min.css" media="screen">
+    <link href={{ url_for( 'static', filename='css/style.css' ) }} rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href={{ url_for( 'static', filename='img/favicon/apple-touch-icon.png' ) }}>
+    <link rel="icon" type="image/png" sizes="32x32" href={{ url_for( 'static', filename='img/favicon/favicon-32x32.png' ) }}>
+    <link rel="icon" type="image/png" sizes="16x16" href={{ url_for( 'static', filename='img/favicon/favicon-16x16.png' ) }}>
+    <link rel="manifest" href={{ url_for( 'static', filename='img/favicon/site.webmanifest' ) }}>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-auto">
+            <!-- title -->
+            <h1 class="text-center">LightBox Control</h1>
+            <br>
+
+            <!-- color picker -->
+            <div class="center-block" id="color-picker-container"></div>
+
+            <!-- buttons -->
+            <div class="text-center mx-auto mt-4" style="width: 300px">
+                <div class="btn-group btn-group-justified w-100" role="group" aria-label="control buttons">
+                    <button id="rainbowbtn" type="button" class="btn btn-danger">Rainbow</button>
+                    <button id="clearbtn" type="button" class="btn btn-success">Clear</button>
+                    <button id="sparklebtn" type="button" class="btn btn-info">Sparkle</button>
+                </div>
+            </div>
+
+            <!-- brightness slider -->
+            <div style="width: 300px" class="mx-auto mt-4" id="brightness-slider-container"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src={{ url_for( 'static', filename='js/iro.min.js' ) }}></script>
+    <script src={{ url_for( 'static', filename='js/main.js' ) }}></script>
+</body>
+
+</html>
